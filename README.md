@@ -8,3 +8,6 @@ https://www.figma.com/file/REtsU9hJiwZYbhQ5YWRvnQ/Oxem-%E2%80%94-%D1%82%D0%B5%D1
 
 Проект с исходным кодом:  
 https://github.com/Rorrian/Car-leasing-calculator--Development
+
+Deployment:  
+https://rorrian.github.io/Car-leasing-calculator/
