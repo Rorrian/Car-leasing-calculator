@@ -132,7 +132,7 @@
                 block.classList.add("_disabled");
             }));
             await delay(2e3);
-            const url = "https://echo.htmlacademy.ru/";
+            const url = "https://hookb.in/eK160jgYJ6UlaRPldJ1P";
             const data = {
                 car_coast: Number(form.querySelector("#input-car-cost").value),
                 initail_payment: Number(form.querySelector(".down-payment").innerHTML.replace(/\s+/g, "")),
