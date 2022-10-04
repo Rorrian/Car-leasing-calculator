@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Калькулятор лизинга авто</title>
+	<meta name="description" content="Калькулятор для расчета параметров лизинга авто">
+
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221004162544">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<!---->
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<h1 class="visually-hidden">Калькулятор лизинга авто</h1>
+			<div class="page__container">
+				<h2 class="page__title title">Рассчитайте стоимость автомобиля в лизинг</h2>
+
+				<form action="https://echo.htmlacademy.ru" name="calculationForm" method="post" class="page__calculation-form form-calculation">
+					<ul class="form-calculation__input-list">
+						<li class="form-calculation__input-item form-calculation-item block-car-cost">
+							<label for="input-car-cost" class="form-calculation-item__label">
+								<span>Стоимость автомобиля</span>
+								<span>Желаемая сумма кредита</span>
+							</label>
+							<div class="form-calculation-item__block-input">
+								<div class="form-calculation-item__input-group">
+									<div class="form-calculation-item__input-values">
+										<input autocomplete="off" type="number" name="form-calculation-input-car-cost" id="input-car-cost" data-error="Некорректное значение!" class="form-calculation-item__input" value="3300000" min="1000000" max="6000000" data-size="7">
+										<span class="form-calculation-item__input-representation">3 300 000</span>
+									</div>
+
+									<span class="form-calculation-item__mark"><span class="currency">₽</span></span>
+								</div>
+								<div class="form-calculation-item__range-group">
+									<input autocomplete="off" type="range" name="form-calculation-item-input-car-cost" id="range-car-cost" data-error="Некорректное значение!" class="form-calculation-item__range" value="3300000" min="1000000" max="6000000">
+									<div class="form-calculation-item__range-progress"></div>
+								</div>
+							</div>
+						</li>
+						<li class="form-calculation__input-item form-calculation-item block-down-payment">
+							<label for="input-down-payment" class="form-calculation-item__label">Первоначальный
+								взнос</label>
+							<div class="form-calculation-item__block-input">
+								<div class="form-calculation-item__input-group">
+									<div class="form-calculation-item__output-block">
+										<span class="form-calculation-item__output-value down-payment">429 000</span><span class="currency">₽</span>
+									</div>
+									<div class="form-calculation-item__mark">
+										<input autocomplete="off" type="number" name="form-calculation-input-down-payment" id="input-down-payment" data-error="Некорректное значение!" class="form-calculation-item__input" value="13" min="10" max="60" data-size="2">
+										<span>%</span>
+									</div>
+								</div>
+								<div class="form-calculation-item__range-group">
+									<input autocomplete="off" type="range" name="form-calculation-input-down-payment" id="range-down-payment" data-error="Некорректное значение!" class="form-calculation-item__range" value="13" min="10" max="60">
+									<div class="form-calculation-item__range-progress"></div>
+								</div>
+							</div>
+						</li>
+						<li class="form-calculation__input-item form-calculation-item block-leasing-term">
+							<label for="input-leasing-term" class="form-calculation-item__label">Срок лизинга</label>
+							<div class="form-calculation-item__block-input">
+								<div class="form-calculation-item__input-group">
+									<input autocomplete="off" type="number" name="form-calculation-item-input-leasing-term" id="input-leasing-term" data-error="Некорректное значение!" class="form-calculation-item__input" value="60" min="1" max="60" data-size="2">
+									<span class="form-calculation-item__mark"><span>мес.</span></span>
+								</div>
+								<div class="form-calculation-item__range-group">
+									<input autocomplete="off" type="range" name="form-calculation-input-leasing-term" id="range-leasing-term" data-error="Некорректное значение!" class="form-calculation-item__range" value="60" min="1" max="60">
+									<div class="form-calculation-item__range-progress"></div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="form-calculation__row">
+						<ul class="form-calculation__info-values-list">
+							<li class="form-calculation__info-value-item info-value">
+								<p class="info-value__label form-calculation-item__label">Сумма договора лизинга</p>
+								<p class="info-value__output">
+									<span class="info-value__value contract-amount">7 334 700</span><span class="currency">₽</span>
+								</p>
+							</li>
+							<li class="form-calculation__info-value-item info-value">
+								<p class="info-value__label form-calculation-item__label">Ежемесячный платеж от</p>
+								<p class="info-value__output">
+									<span class="info-value__value monthly-payment">115 095</span><span class="currency">₽</span>
+								</p>
+							</li>
+						</ul>
+						<button type="submit" class="form-calculation__button">
+							<span class="preloader _hide"></span>
+							<span>Оставить заявку</span>
+						</button>
+					</div>
+				</form>
+			</div>
+		</main>
+	</div>
+	<script src="js/app.min.js?_v=20221004162544"></script>
+</body>
+
+</html>
